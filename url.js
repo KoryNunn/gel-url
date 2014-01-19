@@ -2,6 +2,9 @@ module.exports = function(gel){
     gel.scope.url = function(scope, args){
         return window.location.toString();
     };
+    gel.scope.url.hostname = function(scope, args){
+        return window.location.hostname.toString();
+    };
     gel.scope.url.pathname = function(scope, args){
         return window.location.pathname.toString();
     };
@@ -16,5 +19,8 @@ module.exports = function(gel){
         }
 
         return query;
+    };
+    gel.scope.url.hash = function(scope, args){
+        return window.location.hash.split('#').pop();
     };
 };
