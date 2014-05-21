@@ -12,6 +12,7 @@ module.exports = function(scope){
 
     for(var key in window.location){
         if(
+            !window.location.hasOwnProperty(key) ||
             typeof window.location[key] !== 'string'
         ){
             continue;
