@@ -1,6 +1,6 @@
 {
   "name": "gel-url",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "url functions for gel",
   "main": "url.js",
   "scripts": {
